@@ -1,0 +1,408 @@
+body {
+	font-family: "Roboto", sans-serif;
+	color: #1D1D1D;
+	margin: 0 0;
+}
+
+header {
+	position: fixed;
+	box-sizing: border-box;
+	width: 100%;
+	top: 0;
+	left: 0;
+	margin-bottom: 2rem;
+	/*padding: 0 5rem;*/
+	height: 72px;
+	box-shadow: 0px 0px 16px rgba(38, 38, 38, 0.16);
+	background-color: #fff;
+	z-index: 9999;
+}
+
+header .row {
+	height: 72px;
+}
+
+a {
+	text-decoration: none;
+}
+
+h1, h2, p, ul {
+	margin-block-start: 0;
+	margin-block-end: 0;
+	padding-inline-start: 0;
+}
+
+.btn_up {
+	display: inline-block;
+	box-sizing: border-box;
+	position: fixed;
+	width: 5rem;
+	height: 5rem;
+	text-align: center;
+	bottom: 1.5rem;
+	right: 1rem;
+	transition: background-color 0.3s;
+	background-color: #59BD5A;
+	color: #fff;
+	padding: 1.2rem 0;
+	font-size: 32px;
+	z-index: 2;
+}
+
+.btn_up:hover {
+	cursor: pointer;
+	background-color: #479648;
+}
+
+.hdr_control {
+	display: flex;
+}
+
+.hdr_login {
+	width: 78px;
+	height: 40px;
+	margin-right: 1rem;
+	border: 1px solid #E0E0E0;
+	box-sizing: border-box;
+	border-radius: 2px;
+	background-color: #fff;
+	transition: background-color 0.3s;
+	font: 500 13px/24px "Roboto", sans-serif;
+}
+
+.hdr_login:hover {
+	cursor: pointer;
+	background-color: #fcfcfc;
+}
+.hdr_basket {
+	width: 40px;
+	box-sizing: border-box;
+	border-style: none;
+}
+
+.jumbotron {
+	padding-top: 80px;
+	box-sizing: border-box;
+	margin-top: 72px;
+	height: 364px;
+	background-image: url("../image/jumbotron.png");
+	background-size: cover;
+	background-position: center center;
+}
+
+.rest_card {
+	height: 204px;
+	box-sizing: border-box;
+	padding: 38px 38px 46px 38px;
+	background-color: #fff;
+	box-shadow: 0px 0px 16px rgba(117, 117, 117, 0.2);
+	border-radius: 2px;
+}
+
+.rest_card .name {
+	display: flex;
+	font: 36px/42px "Roboto", sans-serif;
+	color: #1D1D1D;
+}
+
+.rest_card_footer {
+	display: flex;
+	padding-top: 54px;
+}
+
+.rest_card .type {
+	font: 14px/16px "Roboto", sans-serif;
+	color: #626262;
+}
+
+.rest_card .time {
+	padding: 0.5rem 1rem;
+	background-color: #262626;
+	border-radius: 1rem;
+	font: 13px/15px "Roboto", sans-serif;
+	color: #fff;
+
+}
+
+.filter {
+	padding-top: 32px;
+	padding-bottom: 29px;
+	border: 1px solid rgba(117, 117, 117, 0.2);
+}
+
+.filter li {
+	display: inline;
+}
+
+.filter li + li {
+	padding-left: 40px;
+}
+
+.filter .current a {
+	color: #327430;
+}
+
+.filter a {
+	font: 16px/19px "Roboto", sans-serif;
+	color: #626262;
+}
+
+.category {
+	margin-top: 56px;
+	margin-bottom: 32px;
+	font: 22px/34px "Roboto", sans-serif;
+	color: #1D1D1D;
+}
+
+.card {
+	position: relative;
+	display: flex;
+	justify-content: space-between;
+	height: 160px;
+	margin-bottom: 48px;
+	box-sizing: border-box;
+	border-top: 1px solid rgba(117, 117, 117, 0.2);
+	border-bottom: 1px solid rgba(117, 117, 117, 0.2);
+	border-left: 1px solid rgba(117, 117, 117, 0.2);
+	border-radius: 2px;
+	transition: background-color 0.3s;
+	z-index: 1;
+}
+
+.card:hover {
+	background-color: #f7f7f7;
+}
+
+.card:hover .description {
+	display: block;
+}
+
+.card_body {
+	flex-shrink:2;
+	padding: 16px 0 16px 16px;
+}
+
+.card_body .name {
+	margin-bottom: 4px;
+	font: 16px/24px "Roboto", sans-serif;
+	color: #1D1D1D;
+}
+
+.card_body .description {
+	display: none;
+	font: 13px/21px "Roboto", sans-serif;
+	color: #626262;
+
+}
+
+.card_body .price {
+	position: absolute;
+	bottom: 16px;
+	left: 16px;
+	font: 500 15px/21px "Roboto", sans-serif;
+	color: #1D1D1D;
+}
+
+.card img {
+	display: flex;
+	object-fit: contain;
+	margin: -16px 0 -16px -16px;
+}
+
+footer {
+	margin-top: 64px;
+	background-color: #262626;
+}
+
+footer a {
+	color: #fff;
+}
+
+.ftr_logo {
+	padding-top: 3.5rem;
+	padding-bottom: 2.5rem;
+}
+
+.ftr_language {
+	background: url(image/Shape.svg);
+	padding: 2rem 0;
+}
+
+.ftr_language select{
+	width: 100%;
+	height: 2.5rem;
+	background: #3B3B3B;
+	font: 13px/15px "Roboto", sans-serif;
+	color: #fff;
+}
+
+.ftr_info_1, .ftr_info_2 {
+	list-style-type: none;
+	padding-top: 2.5rem;
+	padding-bottom: 3rem;
+}
+
+footer li {
+	padding-bottom: 1.5rem;
+}
+
+.ftr_media {
+	width: 92px;
+	height: 60px;
+}
+
+.ftr_ubereats {
+	font: 16px/19px "Roboto", sans-serif;
+	color: #fff;
+	padding-bottom: 1rem;
+}
+
+.ftr_hashtag {
+	color: #49a144;
+}
+
+.socials {
+	display: flex;
+}
+
+.ftr_apps {
+	padding: 2.5rem 0;
+}
+
+.appstore {
+	margin-right: 2.5rem; 
+}
+
+.ftr_copyright {
+	padding: 2.5rem 0;
+	font: 11px/13px "Roboto", sans-serif;
+	color: #fff;
+}
+
+@media screen and (max-width: 767.98px) {
+	.rest_card {
+		padding: 38px 68px 46px 48px;
+	}
+
+	.rest_card .time {
+		font: 12px/14px "Roboto", sans-serif;
+	}
+
+	.filter	{
+		display: none;
+	}
+
+	.card_body {
+		padding: 16px 0 24px 16px;
+	}
+
+	footer {
+		margin-top: 32px;
+	}
+
+	.ftr_info_1 {
+		padding-bottom: 0;
+	}
+
+	.ftr_info_2 {
+		padding-top: 0;
+		padding-bottom: 2.5rem;
+	}
+}
+
+@media screen and (max-width: 575.98px) {
+	.btn_up {
+		width: 4rem;
+		height: 4rem;
+		padding: 0.6rem 0;
+	}
+
+	.hdr_login {
+		margin-right: 0;
+	}
+
+	.hdr_basket {
+		display: none;
+	}
+
+	.jumbotron {
+		padding-top: 130px;
+		padding-bottom: 110px;
+		height: 256px;
+	}
+
+	.rest_card {
+		height: 180px;
+		padding: 24px 48px;
+	}
+
+	.rest_card .name {
+		font: 24px/28px "Roboto", sans-serif;
+	}
+	
+	.rest_card_footer {
+		flex-direction: column;
+		padding-top: 40px;
+	}
+
+	.rest_card .type {
+		padding-bottom: 1rem;
+	}
+
+	.category {
+		margin-top: 110px;
+		margin-bottom: 56px;
+		text-align: center;
+		text-decoration: underline;
+		font: 22px/34px "Roboto", sans-serif;
+		color: #1D1D1D;
+	}
+
+	.card {
+		height: 102px;
+		margin-bottom: 16px;
+		border-top: none;
+		border-left: none;
+	}
+
+	.card:hover {
+		height: 120px;
+	}
+
+	.card_body {
+		padding: 0 0 16px 0;
+	}
+
+	.card_body .name {
+		width: 210px;
+		font: 14px/24px "Roboto", sans-serif;
+		white-space: nowrap;
+		overflow: hidden;
+		text-overflow: ellipsis;
+	}
+
+	.card_body .description {
+		width: 150px;
+	}
+
+	.card_body .price {
+		left: 0;
+	}
+
+	.card img {
+		height: 100%;
+		margin: 0 0 -16px 0;
+	}
+
+	.footer {
+		margin-top: 40px;
+	}
+
+	.ftr_apps {
+		padding: 1.5rem;
+	}
+
+	.appstore {
+		margin-right: 1rem;
+	}
+}
