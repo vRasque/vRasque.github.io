@@ -261,3 +261,14 @@ footer li {
 		margin-right: 1rem;
 	}
 }
+
+.user {
+	border: 1px red solid;
+	padding : 5px;
+}
+.drop_menu {
+	visibility: hidden;
+}
+.user:hover .drop_menu {
+	visibility: visible;
+}
